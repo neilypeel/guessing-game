@@ -5,7 +5,7 @@ var guesses = 0;
 var lowOrHi = document.querySelector('.lowOrHi');
 var guessP = document.querySelector('.guesses');
 console.log("The number to be guessed is foo: " + randomNumber);
-
+var lastResult = document.querySelector('.lastResult');
 // This happens with each click
 document.getElementById('checkGuess').addEventListener('click', function(event) {
     // write some code here
@@ -31,6 +31,9 @@ document.getElementById('checkGuess').addEventListener('click', function(event) 
     console.log("total number of guesses " + guesses);
     guessP.textContent = "guesses:" + guesses;
 
+    console.log("last result");
+     lastResult.textContent = "last user guess";
+
 
     // ToDO: Update #lastResult element with the last user guess (userGuess)
-});
+});  
